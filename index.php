@@ -9,6 +9,7 @@
   <title>Taufik Hidayat | MSIB Personal Website</title>
   <link rel="stylesheet" href="dist/output.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 </head>
 
 <body>
@@ -64,7 +65,7 @@
         <div class="w-full self-center px-4 lg:w-1/2">
           <h1 class="text-base font-semibold text-primary ml-2 md:text-xl" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Halo Semuanya 👋, <span class="text-dark">Perkenalkan Saya</span> <span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Taufik Hidayat</span></h1>
           <h2 class="mb-5 text-lg font-medium text-secondary mt-2 ml-2 lg:text-2xl" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Mahasiswa, Programmer & Content Creator</span></h2>
-          <p class="mb-10 font-medium leading-relaxed ml-2 text-secondary" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <p id="typed-text" class="mb-10 font-medium leading-relaxed ml-2 text-secondary" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             "Dengan memulai <span class="font-bold text-primary dark:text-white">Sesuatu yang baik bagimu</span> maka kamu akan membuka peluang masa depan yang <span class="font-bold text-primary dark:text-white">Cerah dan Sukses untuk karirmu!</span>,
             <span class="font-bold text-secondary dark:text-white">Insyallah</span>"
           </p>
@@ -739,6 +740,17 @@
 
   <!-- Javascript Canvas 2D -->
   <script src="dist/js/canvas_2d.js"></script>
+
+  <script>
+    var typed = new Typed('#typed-text', {
+      strings: ['Salam Kenal!', 'Salam kenal dengan Anda!'],
+      typeSpeed: 20,
+      backSpeed: 20,
+      loop: true,
+      smartBackspace: false,
+      showCursor: false
+    });
+  </script>
 
 </body>
 
